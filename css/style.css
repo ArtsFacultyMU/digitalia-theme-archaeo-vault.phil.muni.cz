@@ -1,0 +1,114 @@
+.block-simple-blocksite-logo .content img{
+	height: 68px;
+}
+
+
+/* logo colours:
+ * blue:  #232391
+ * brown: #EFC08D
+ *
+ * added colours:
+ * brighter blue: #2323b4
+ */
+
+a, a.link, a:visited { 
+	color: #232391;
+}
+
+.button, .button:visited {
+	background-color: #232391;
+}
+
+h1, h2, h3 {
+	color: #232391;
+}
+
+ul.tabs li.is-active, ul.tabs li.is-active a {
+	background-color: #232391;
+}
+
+.tabs ul.primary li a {
+	color: #232391;
+}
+
+.tabs ul.primary li.is-active a {
+	background-color: #232391;
+}
+
+ul.tabs.primary {
+	border-bottom: 1px solid #232391;
+}
+
+div.block-facet--links ul {
+	color: #232391;
+}
+
+.facets-widget-links ul li.facet-item label .facet-item__value {
+	color: #232391; 
+}
+
+/* set brighter link colour */
+.site-footer .content a, 
+.site-footer .content a:visited {
+	color: #2323b4;
+}
+
+#header {
+	color: #2323b4;
+	border-bottom: #EFC08D solid 2px;
+}
+
+.region-header, .region-header a, .region-header li a.is-active, .region-header .site-branding__text, .region-header .site-branding, .region-header .site-branding__text a, .region-header .site-branding a, .region-secondary-menu .menu-item a, .region-secondary-menu .menu-item a.is-active {
+	color: #2323b4;
+}
+
+.sf-accordion-toggle a::before {
+	color: #2323b4;
+}
+
+div.sf-accordion-toggle.sf-style-default a {
+	color: #2323b4;
+}
+
+body {
+	border-top: 6px solid #EFC08D;
+	border-bottom: 6px solid #EFC08D;
+}
+
+div.layout-main-wrapper {
+	border: none;
+}
+
+.region-primary-menu ul.menu > li > span,
+.region-primary-menu ul.menu > li {
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+footer.site-footer {
+	border-top: 2px solid #EFC08D;
+}
+
+
+
+
+
+
+nav.navigation.menu--account,
+#block-islandora-muni-languageswitcher,
+#block-languageswitcher {
+	clear: none;
+	float: none;
+	padding-left: 1rem;
+	padding-top: .3rem;
+}
+
+nav.navigation.menu--account {
+	width: auto;
+	height: auto;
+}
+
+nav.navigation.menu--account a {
+	font-size: 1.3rem;
+	padding: 0;
+}
