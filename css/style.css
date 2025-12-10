@@ -8,7 +8,9 @@
  * brown: #EFC08D
  *
  * added colours:
- * brighter blue: #2323b4
+ * brighter blue: #4339AC
+ * brighter brown: #FFDCA8
+ * brighest brown: #FAEDE0
  */
 
 a, a.link, a:visited { 
@@ -16,7 +18,13 @@ a, a.link, a:visited {
 }
 
 .button, .button:visited {
-	background-color: #232391;
+	background-color: #4339AC;
+	border: #232391 solid 2px;
+}
+
+.button:hover, .button:active, input.form-submit:hover, input.form-submit:focus {
+    background-color: #232391;
+    border: #232391 solid 2px;
 }
 
 h1, h2, h3 {
@@ -50,24 +58,24 @@ div.block-facet--links ul {
 /* set brighter link colour */
 .site-footer .content a, 
 .site-footer .content a:visited {
-	color: #2323b4;
+	color: #4339AC;
 }
 
 #header {
-	color: #2323b4;
+	color: #4339AC;
 	border-bottom: #EFC08D solid 2px;
 }
 
 .region-header, .region-header a, .region-header li a.is-active, .region-header .site-branding__text, .region-header .site-branding, .region-header .site-branding__text a, .region-header .site-branding a, .region-secondary-menu .menu-item a, .region-secondary-menu .menu-item a.is-active {
-	color: #2323b4;
+	color: #4339AC;
 }
 
 .sf-accordion-toggle a::before {
-	color: #2323b4;
+	color: #4339AC;
 }
 
 div.sf-accordion-toggle.sf-style-default a {
-	color: #2323b4;
+	color: #4339AC;
 }
 
 body {
@@ -111,4 +119,9 @@ nav.navigation.menu--account {
 nav.navigation.menu--account a {
 	font-size: 1.3rem;
 	padding: 0;
+}
+
+
+.views-exposed-form.block {
+	background: #FAEDE0;
 }
