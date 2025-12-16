@@ -164,7 +164,7 @@ nav.navigation.menu--account a {
 	padding: 0;
 }
 
-/* new */
+/* better  banner on mobile */
 
 @media (max-width: 560px) {
   div.block-simple-blockfront-page-jumbotron > div.content {
@@ -177,4 +177,11 @@ nav.navigation.menu--account a {
   div.block-simple-blockfront-page-jumbotron > div.content {
     min-height: 220px;
   }
+}
+
+/* hide full-text search in sidebar */
+#views-exposed-form-solr-search-search .form-item-search-api-fulltext {
+    visibility: hidden;
+    margin: unset;
+    height: 0;
 }
