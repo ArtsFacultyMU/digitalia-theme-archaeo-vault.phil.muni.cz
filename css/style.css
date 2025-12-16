@@ -125,3 +125,7 @@ nav.navigation.menu--account a {
 .views-exposed-form.block {
 	background: #FAEDE0;
 }
+
+.views-exposed-form.block.block-views-exposed-filter-blocksolr-search-search-top {
+	background: none;
+}
