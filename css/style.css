@@ -37,7 +37,7 @@
   --color-brand-primary-light: var(--blue-50);
   --color-brand-secondary-light: var(--sand-50);
 
-  --color-brand-primary-mid: var(--blue-300);
+  --color-brand-primary-mid: var(--blue-400);
   --color-brand-secondary-mid: var(--sand-300);
 }
 
@@ -93,11 +93,6 @@ div.block-facet--links ul {
 	color: var(--color-brand-primary-mid);
 }
 
-#header {
-	color: var(--color-brand-primary-mid);
-	border-bottom: var(--grey-300) solid 2px;
-}
-
 .region-header, .region-header a, .region-header li a.is-active, .region-header .site-branding__text, .region-header .site-branding, .region-header .site-branding__text a, .region-header .site-branding a, .region-secondary-menu .menu-item a, .region-secondary-menu .menu-item a.is-active {
 	color: var(--color-brand-primary-mid);
 }
@@ -127,15 +122,10 @@ div.layout-main-wrapper {
 	font-weight: 300;
 }
 
-footer.site-footer {
-	border-top: 2px solid var(--grey-300);
-}
-
-
 /* sandy search filter background (except for fulltext search) */
-
 .views-exposed-form.block {
 	background: var(--color-brand-primary-light);
+    border-radius: 8p
 }
 
 .views-exposed-form.block.block-views-exposed-filter-blocksolr-search-search-top {
@@ -144,7 +134,6 @@ footer.site-footer {
 
 
 /* style login/logout */
-
 nav.navigation.menu--account,
 #block-islandora-muni-languageswitcher,
 #block-languageswitcher {
@@ -164,13 +153,32 @@ nav.navigation.menu--account a {
 	padding: 0;
 }
 
-/* better  banner on mobile */
+/* search at top in mobile */
+@media (max-width: 768px) {
+    .layout-one-sidebar.layout-sidebar-first .layout-main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
 
+/* better  banner on mobile */
 @media (max-width: 560px) {
   div.block-simple-blockfront-page-jumbotron > div.content {
     min-height: 200px;
   }
 
+  div.block-simple-blockfront-page-jumbotron > div.content span {
+    font-size: 1rem;
+  }
+
+  div.block-simple-blockfront-page-jumbotron > div.content span:nth-child(1) {
+    font-size: 2.6rem;
+  }
+
+  div.block-simple-blockfront-page-jumbotron > div.content > p {
+    transform: translateY(1.5vw);
+    padding: .5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -184,4 +192,14 @@ nav.navigation.menu--account a {
     visibility: hidden;
     margin: unset;
     height: 0;
+}
+
+/* filters max width of sidebar */
+div.region-sidebar-first select, div.region-sidebar-first form div.form-item {
+    width: 100%;
+}
+
+/* let users use italic in text edit forms */
+em {
+	font-style: italic;
 }
