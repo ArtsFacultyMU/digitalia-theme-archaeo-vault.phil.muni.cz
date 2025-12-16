@@ -1,87 +1,121 @@
+/* Brand colours */
+
+:root {
+  /* ===== Raw Blues ===== */
+  --blue-50:  #ECECFB;
+  --blue-100: #C1C1F2;
+  --blue-200: #9696E9;
+  --blue-300: #6C6CDF;
+  --blue-400: #4141CE;
+  --blue-500: #232391;
+  --blue-600: #0D0D4B;
+
+  /* ===== Raw Sands / Browns ===== */
+  --sand-50:  #FAEFE5;
+  --sand-100: #F0C08D;
+  --sand-200: #CA995C;
+  --sand-300: #9D7546;
+  --sand-400: #715431;
+  --sand-500: #49351D;
+  --sand-600: #24180A;
+
+  /* ===== Greys ===== */
+  --grey-50:  #EDEDEE;
+  --grey-100: #C5C5C8;
+  --grey-200: #9E9EA3;
+  --grey-300: #797980;
+  --grey-400: #56565E;
+  --grey-500: #35353B;
+  --grey-600: #17171B;
+
+  --color-brand-primary:   var(--blue-500);
+  --color-brand-secondary: var(--sand-100);
+
+  --color-brand-primary-dark: var(--blue-600);
+  --color-brand-secondary-dark: var(--sand-500);
+
+  --color-brand-primary-light: var(--blue-50);
+  --color-brand-secondary-light: var(--sand-50);
+
+  --color-brand-primary-mid: var(--blue-300);
+  --color-brand-secondary-mid: var(--sand-300);
+}
+
 .block-simple-blocksite-logo .content img{
 	height: 68px;
 }
 
-
-/* logo colours:
- * blue:  #232391
- * brown: #EFC08D
- *
- * added colours:
- * brighter blue: #4339AC
- * brighter brown: #FFDCA8
- * brighest brown: #FAEDE0
- */
-
 a, a.link, a:visited { 
-	color: #232391;
+	color: var(--color-brand-primary);
 }
 
 .button, .button:visited {
-	background-color: #4339AC;
-	border: #232391 solid 2px;
+	background-color: var(--color-brand-primary);
+	border: none;
 }
 
 .button:hover, .button:active, input.form-submit:hover, input.form-submit:focus {
-    background-color: #232391;
-    border: #232391 solid 2px;
+    background-color: var(--grey-600);
+    border: var(--grey-600) solid 2px;
 }
 
 h1, h2, h3 {
-	color: #232391;
+	color: var(--color-brand-primary);
 }
 
 ul.tabs li.is-active, ul.tabs li.is-active a {
-	background-color: #232391;
+	background-color: var(--color-brand-primary);
 }
 
 .tabs ul.primary li a {
-	color: #232391;
+	color: var(--color-brand-primary);
 }
 
 .tabs ul.primary li.is-active a {
-	background-color: #232391;
+	background-color: var(--color-brand-primary);
 }
 
 ul.tabs.primary {
-	border-bottom: 1px solid #232391;
+	border-bottom: 1px solid var(--color-brand-primary);
 }
 
 div.block-facet--links ul {
-	color: #232391;
+	color: var(--color-brand-primary);
 }
 
 .facets-widget-links ul li.facet-item label .facet-item__value {
-	color: #232391; 
+	color: var(--color-brand-primary); 
 }
 
 /* set brighter link colour */
 .site-footer .content a, 
 .site-footer .content a:visited {
-	color: #4339AC;
+	color: var(--color-brand-primary-mid);
 }
 
 #header {
-	color: #4339AC;
-	border-bottom: #EFC08D solid 2px;
+	color: var(--color-brand-primary-mid);
+	border-bottom: var(--grey-300) solid 2px;
 }
 
 .region-header, .region-header a, .region-header li a.is-active, .region-header .site-branding__text, .region-header .site-branding, .region-header .site-branding__text a, .region-header .site-branding a, .region-secondary-menu .menu-item a, .region-secondary-menu .menu-item a.is-active {
-	color: #4339AC;
+	color: var(--color-brand-primary-mid);
 }
 
 .sf-accordion-toggle a::before {
-	color: #4339AC;
+	color: var(--color-brand-primary-mid);
 }
 
 div.sf-accordion-toggle.sf-style-default a {
-	color: #4339AC;
+	color: var(--color-brand-primary-mid);
 }
 
+/* either use FF MUNI blue or delete
 body {
-	border-top: 6px solid #EFC08D;
-	border-bottom: 6px solid #EFC08D;
+	border-top: 6px solid var(--color-brand-secondary);
+	border-bottom: 6px solid var(--color-brand-secondary);
 }
+*/
 
 div.layout-main-wrapper {
 	border: none;
@@ -94,13 +128,22 @@ div.layout-main-wrapper {
 }
 
 footer.site-footer {
-	border-top: 2px solid #EFC08D;
+	border-top: 2px solid var(--grey-300);
 }
 
 
+/* sandy search filter background (except for fulltext search) */
+
+.views-exposed-form.block {
+	background: var(--color-brand-primary-light);
+}
+
+.block.block-views-exposed-filter-blocksolr-search-search-top {
+    background: white;
+}
 
 
-
+/* style login/logout */
 
 nav.navigation.menu--account,
 #block-islandora-muni-languageswitcher,
@@ -121,7 +164,17 @@ nav.navigation.menu--account a {
 	padding: 0;
 }
 
+/* new */
 
-.views-exposed-form.block {
-	background: #FAEDE0;
+@media (max-width: 560px) {
+  div.block-simple-blockfront-page-jumbotron > div.content {
+    min-height: 200px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  div.block-simple-blockfront-page-jumbotron > div.content {
+    min-height: 220px;
+  }
 }
