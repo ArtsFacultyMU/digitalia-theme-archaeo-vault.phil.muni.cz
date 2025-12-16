@@ -138,8 +138,8 @@ footer.site-footer {
 	background: var(--color-brand-primary-light);
 }
 
-.block.block-views-exposed-filter-blocksolr-search-search-top {
-    background: white;
+.views-exposed-form.block.block-views-exposed-filter-blocksolr-search-search-top {
+	background: none;
 }
 
 
