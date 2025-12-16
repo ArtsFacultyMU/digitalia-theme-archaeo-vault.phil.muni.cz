@@ -41,17 +41,63 @@
   --color-brand-secondary-mid: var(--sand-300);
 }
 
-.block-simple-blocksite-logo .content img{
-	height: 68px;
+/* format header with logo */
+
+div.region-header {
+    margin-bottom: 1.5rem;
 }
 
+a.site-logo {
+    display: inline-block;
+    /* margin-bottom: 0; */
+}
+
+a.site-branding__logo img {
+    justify-content: center;
+}
+
+#block-islandora-muni-languageswitcher,#block-languageswitcher {
+    padding-top: unset;
+}
+
+.block-simple-blocksite-logo .content img {
+    height: 68px;
+    left: -7px;
+    position: relative;
+    /* top: -4px; */
+    max-height: 56px;
+    display: inline-block;
+}
+
+/* style login/logout */
+nav.navigation.menu--account,
+#block-islandora-muni-languageswitcher,
+#block-languageswitcher {
+	clear: none;
+	float: none;
+	padding-left: 1rem;
+    padding-top: 0;
+    align-self: center;
+}
+
+nav.navigation.menu--account {
+	width: auto;
+	height: auto;
+}
+
+nav.navigation.menu--account a {
+	font-size: 1.3rem;
+	padding: 0;
+}
+
+/* use brand colour for links */
 a, a.link, a:visited { 
 	color: var(--color-brand-primary);
 }
 
 .button, .button:visited {
 	background-color: var(--color-brand-primary);
-	border: none;
+	border: white solid 2px;
 }
 
 .button:hover, .button:active, input.form-submit:hover, input.form-submit:focus {
@@ -130,27 +176,7 @@ div.layout-main-wrapper {
 
 .views-exposed-form.block.block-views-exposed-filter-blocksolr-search-search-top {
 	background: none;
-}
-
-
-/* style login/logout */
-nav.navigation.menu--account,
-#block-islandora-muni-languageswitcher,
-#block-languageswitcher {
-	clear: none;
-	float: none;
-	padding-left: 1rem;
-	padding-top: .3rem;
-}
-
-nav.navigation.menu--account {
-	width: auto;
-	height: auto;
-}
-
-nav.navigation.menu--account a {
-	font-size: 1.3rem;
-	padding: 0;
+    align-self: center;
 }
 
 /* search at top in mobile */
@@ -202,4 +228,29 @@ div.region-sidebar-first select, div.region-sidebar-first form div.form-item {
 /* let users use italic in text edit forms */
 em {
 	font-style: italic;
+}
+
+/* footer links */
+.featured-bottom {
+    border-top: none;
+    background: var(--color-brand-secondary-light);
+}
+
+.region.region-featured-bottom-first {
+    width: 100%;
+}
+
+.footer__links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer__column {
+    flex: 1 1;
+}
+
+footer.site-footer {
+  margin-top: unset;
+  border-top: unset;
 }
