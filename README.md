@@ -1,3 +1,8 @@
+
+<p align="left">
+  <img src="https://webcentrum.muni.cz/media/3830724/seda_eosc-safespace-15.png" alt="EOSC CZ Logo" height="150">
+</p>
+
 # digitalia-theme-archaeo-vault.phil.muni.cz
 
 Platform specific configurations to the [Digitalia theme](https://github.com/ArtsFacultyMU/digitalia-general-theme-muni_style) for ArchaeoVault.
