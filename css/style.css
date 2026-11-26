@@ -264,3 +264,11 @@ footer.site-footer {
 .button-container-center {
   text-align: center;
 }
+
+div#block-islandora-muni-languagedropdownswitcher {
+    align-self: center;
+}
+
+.region-primary-menu ul.menu > li:nth-child(3) {
+    flex-grow: 2;
+}
